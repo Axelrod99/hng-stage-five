@@ -132,3 +132,11 @@ select {
   /* color: black; */
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
