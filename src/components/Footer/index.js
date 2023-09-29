@@ -5,15 +5,15 @@ import logo2 from "../../assets/icons/iCON 7 2.svg";
 const Footer = () => {
   return (
     <div className="bg-[#120B48] flex justify-center items-center">
-      <div className="flex w-full px-[100px] py-[65px] gap-[100px]">
+      <div className="flex w-full px-[20px] sm:px-[50px] md:px-[100px] py-[65px] gap-[60px] lg:gap-[100px]">
         <div className="flex font-bold gap-[8px] py-5">
-          <div>
+          {/* <div>
             <img src={logo2} />
-          </div>
+          </div> */}
           <p className="text-white font-bold mt-2">HelpMeOut</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-[100px] text-white">
+        <div className="grid grid-cols-2 sm:grid-cols-3 w-full text-[14px] lg:text-[16px] gap-[40px] lg:gap-[100px] text-white">
           <div className="flex flex-col gap-[24px]">
             <p className="font-semibold">Menu</p>
             <p>Home</p>
