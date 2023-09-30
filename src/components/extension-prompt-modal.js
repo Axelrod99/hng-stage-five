@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactComponent as CloseIcon } from '../assets/close-circle.svg';
 import { ReactComponent as SettingsIcon } from '../assets/setting.svg';
 import { ReactComponent as Logo } from '../assets/logo.svg';
@@ -7,9 +7,13 @@ import { ReactComponent as MicIcon } from '../assets/microphone.svg';
 import { ReactComponent as VideoIcon } from '../assets/video-camera.svg';
 import { CgScreen } from "react-icons/cg";
 import { FiCopy } from "react-icons/fi";
+import RecorderMenu from './recorderMenu';
 
 const PromptModal = ({onClose}) => {
+    const[showRecordMenu, setShowRecordMenu]= useState(false);
+
     return ( 
+        <div>
         <div className='p-4 absolute top-1 right-5 rounded-[24px] shadow-md bg-white z-20 w-[300px]'>
 
             <div className='flex justify-between'>
@@ -42,9 +46,14 @@ const PromptModal = ({onClose}) => {
                 <MicIcon />
                 <p className='ml-2'>Audio </p>
             </div>
-            <button className='bg-[#120B48] text-white w-full rounded-md h-[50px] mt-4'>
+            <button onClick={()=>setShowRecordMenu(true)} className='bg-[#120B48] text-white w-full rounded-md h-[50px] mt-4'>
                 Start Recording
-             </button>
+            </button>
+            
+        </div>
+        {showRecordMenu && 
+            <RecorderMenu onClose={()=>setShowRecordMenu(false)} />
+        }
         </div>
      );
 }
