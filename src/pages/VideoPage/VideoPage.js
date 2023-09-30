@@ -4,9 +4,9 @@ import {
   FaFacebook,
   FaWhatsapp,
   FaTelegram,
-  FaEdit,
-  FaCopy,
+  FaRegEdit
 } from "react-icons/fa";
+import {FiCopy} from "react-icons/fi"
 import "./VideoPage.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -28,8 +28,8 @@ const VideoPlayer = () => {
           <div className="container2">
             <p>Name</p>
             <div className="editable-text">
-              <input type="text" placeholder="Edit Name" />
-              <FaEdit />
+              <input type="text" value="Edit Name" readOnly />
+              <FaRegEdit size={25} color="#0a0628"/>
             </div>
           </div>
           <div className="container3">
@@ -39,18 +39,15 @@ const VideoPlayer = () => {
           <div className="container4">
             <p className="bold-text">Video URL</p>
             <div className="url-container">
-  <input type="text" value="https://example.com/video" readOnly />
-  <div className="copy-container">
-    <button className="copy-button">
-      <span>
-        <FaCopy className="fa-copy" /> Copy
-      </span>
-    </button>
-  </div>
-</div>
-
-
-
+              <input type="text" value="https://example.com/video" readOnly />
+              <div className="copy-container">
+                <button className="copy-button">
+                  
+                    <FiCopy style={{ fontSize: '32px', color:"#0a0628"  }}  className="fi-copy" /> Copy
+                  
+                </button>
+              </div>
+            </div>
 
           </div>
 
@@ -123,7 +120,7 @@ const VideoPlayer = () => {
             we recommend saving it to your account.
           </p>
           <button className="save-button">Save Video</button>
-          <p>Don't have an account? <span className="bold-text">Create an account.</span> </p>
+          <p>Don't have an account? <span className="bold-text">Create an account.</span></p>
         </div>
       </div>
       <Footer />
