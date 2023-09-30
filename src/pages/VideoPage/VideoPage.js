@@ -15,7 +15,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import SimpleBar from "simplebar-react";
 
 
-const VideoPlayer = () => {
+const VideoPage = () => {
   return (
     <div className="video-player">
       <Header />
@@ -128,4 +128,4 @@ const VideoPlayer = () => {
   );
 };
 
-export default VideoPlayer;
+export default VideoPage;
