@@ -6,7 +6,7 @@ import RecorderMenu from "./components/recorderMenu";
 import VideoPlayer from "./pages/VideoPage/VideoPage";
 import AuthPage from "./pages/AuthPage";
 import Home from "./pages/Home/Home";
-
+import Create from './pages/CreatePage/Create'
 
 function App() {
   return(
@@ -17,6 +17,7 @@ function App() {
         <Route path="/ready" element={<VideoPlayer/>} />
         <Route path="/landing-page" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/Create" element={<Create />} />
       </Routes>
     </Router>
   ) 
