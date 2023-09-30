@@ -27,9 +27,10 @@ const Features = () => {
   ];
 
   return (
-    <div>
-      <div className="px-[30px] relative z-[999] mb-[80px]">
-        <div className="flex flex-col items-center pt-[80px]">
+    <div className="relative">
+          <div className="w-full absolute top-7 flex md:hidden bg-[#F4F6F8] h-[55px]" />
+      <div className="px-[30px] relative z-[999] mt-24 md:mt-0 mb-[80px]">
+        <div className="flex flex-col items-center pt-[140px] md:pt-[80px]">
           <p className="text-[#141414] font-bold text-[36px] lg:text-[40px]">
             Features
           </p>

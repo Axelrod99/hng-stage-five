@@ -4,8 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Card from "./Card";
 import "./home.css";
-import { FaSearch } from 'react-icons/fa';
-
+import { FaSearch } from "react-icons/fa";
 
 function Home() {
   return (
@@ -16,14 +15,18 @@ function Home() {
         <div className="user-container">
           <div className="username">John Doe</div>
         </div>
-        <div className="search-container"><span className="search-icon"> <FaSearch className="search-icon" /></span>
-  
-  <input
-    type="text"
-    className="search-input"
-    placeholder="Search for a particular video"
-  /> 
-</div>
+        <div className="search-container">
+          <span className="search-icon">
+            {" "}
+            <FaSearch className="search-icon" />
+          </span>
+
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search for a particular video"
+          />
+        </div>
       </div>
 
       <hr className="divider" />

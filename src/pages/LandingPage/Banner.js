@@ -47,7 +47,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="w-full bg-[#F4F6F8] h-[55px]" />
+      <div className="w-full bg-[#F4F6F8] h-[55px] opacity-0 md:opacity-100" />
     </div>
   );
 };
