@@ -6,7 +6,7 @@ import Card from "./Card";
 import "./home.css";
 import { FaSearch } from "react-icons/fa";
 
-function Home() {
+const Home =()=> {
   return (
     <div className="home">
       <Header />
