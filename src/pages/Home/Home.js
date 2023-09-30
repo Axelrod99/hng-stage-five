@@ -1,24 +1,44 @@
-// Home.js
 import React from "react";
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Card from "./Card";
 import "./home.css";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaRegUserCircle } from "react-icons/fa";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import logo1 from "../../assets/icons/iCON 7 1.svg";
+import Profile from "../../assets/icons/profile-circle.svg";
+import Search from "../../assets/icons/search-normal.svg";
 
-const Home =()=> {
+const Home = () => {
   return (
     <div className="home">
-      <Header />
+      {/* Navbar properties */}
+      <div className="nav-bar">
+        <div className="help-container">
+          <span>
+            <img src={logo1} />
+          </span>
+          <div className="text1">HelpMeOut</div>
+        </div>
+        <div className="mini-user">
+          <span className="user-icon">
+            {" "}
+            <img src={Profile} />
+          </span>
+          <p>John Mark</p>
+
+          <RiArrowDropDownLine style={{ fontSize: "32px", color: "#0a0628" }} />
+        </div>
+      </div>
 
       <div className="user-search-container">
         <div className="user-container">
-          <div className="username">John Doe</div>
+          <div className="username">Hello, John Mark</div>
+          <p>Here are your recorded videos</p>
         </div>
         <div className="search-container">
           <span className="search-icon">
             {" "}
-            <FaSearch className="search-icon" />
+            <img src={Search} />
           </span>
 
           <input
@@ -56,6 +76,6 @@ const Home =()=> {
       <Footer />
     </div>
   );
-}
+};
 
 export default Home;
