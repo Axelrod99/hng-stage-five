@@ -1,98 +1,78 @@
 .container {
-    display: flex;
-    flex-direction: column; 
-    margin-bottom: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
+.cards {
+  display: flex;
+  gap: 100px;
+}
+
+.card {
+  flex: 1;
+  width: 100%;
+  height: 13rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
   .cards {
-    display: flex;
-    gap: 100px; 
+    justify-content: flex-start;
   }
-  
-  .card {
-    flex: 1;
-    width: 100%; 
-    height: 13rem; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  @media (max-width: 600px) {
-    .cards {
-      justify-content: flex-start; 
-    }
-  }
-  .user-search-container {
-    display: flex;
-   margin:  5px 70px 0 70px;
+}
+.user-search-container {
+  display: flex;
+  margin: 5px 70px 0 70px;
+}
 
+.user-container {
+  flex: 1;
+  padding: 10px;
+}
 
-  }
-  
-  .user-container {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  .username {
-    font-size: 24px;
-  }
-  .search-container {
-    display: flex;
-    align-items: center;
-    background-color: #ccc;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  .search-input {
-    flex: 1;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 5px;
-   
-  }
-  
-  .search-icon {
-    color: #000;
-    margin-right: 5px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  /* .search-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  } */
-  
- 
-  .divider {
-    border: 1px solid #ccc; 
-    margin: 20px 0; 
-  }
+.username {
+  font-size: 24px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
 
+.search-input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-icon {
+  color: #000;
+  margin-right: 5px;
+}
+
+.divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
 
 .scroll-container {
-    max-height: 300px; 
-    overflow-y: auto; 
-    margin: 0px 70px 0 70px;
-  }
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 0px 70px 0 70px;
   
-  .container-header {
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding: 10px;
-  }
+}
+
+.container-header {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+}
