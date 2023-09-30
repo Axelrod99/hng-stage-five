@@ -5,7 +5,7 @@ import Create from "./pages/CreatePage/Create"
 import Ready from "./pages/Ready/Ready"
 
 function App() {
-  return <Ready />;
+  return <Create />;
 }
 
 export default App;

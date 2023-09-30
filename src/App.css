@@ -183,8 +183,31 @@ select {
   background-color: rgba(242, 244, 247, 1);
 }
 
+div.transcript-bar::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 4px;
+}
+
+/* Track */
+div.transcript-bar::-webkit-scrollbar-track {
+  background:rgba(217, 217, 217, 1);
+  border-radius: 4px;
+  height: 30%;
+}
+
+/* Handle */
+div.transcript-bar::-webkit-scrollbar-thumb {
+  background: rgba(217, 217, 217, 1);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+div.transcript-bar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 @media screen and (max-width: 640px) {
+
   .chrome-text {
     white-space: nowrap;
     overflow: hidden;
@@ -273,6 +296,25 @@ select {
 
   .drop-tab,
   .new-tab {
+    display: none;
+  }
+
+  div.transcript-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Track */
+  div.transcript-bar::-webkit-scrollbar-track {
+    display: none;
+  }
+  
+  /* Handle */
+  div.transcript-bar::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  
+  /* Handle on hover */
+  div.transcript-bar::-webkit-scrollbar-thumb:hover {
     display: none;
   }
 }

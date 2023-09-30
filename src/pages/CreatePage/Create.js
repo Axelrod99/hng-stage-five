@@ -1,16 +1,4 @@
 import React from "react";
-import Favicon from "../../assets/img/Favicon.png";
-import closeTab from "../../assets/img/Vector.png";
-import LeftStroke from "../../assets/img/Left round feet.png";
-import RightStroke from "../../assets/img/Right round feet.png";
-import Logo from "../../assets/img/iCON 7 1.png";
-import Back from "../../assets/img/Back button.png";
-import Forward from "../../assets/img/Forward button.png";
-import Refresh from "../../assets/img/Refresh button.png";
-import ExtIcon from "../../assets/img/Extensions button.png";
-import SideBar from "../../assets/img/Sidebar button.png";
-import Profile from "../../assets/img/Profile.png";
-import More from "../../assets/img/More.png";
 import NavLogo from "../../assets/img/Nav Logo.png";
 import ProfileCircle from "../../assets/img/profile-circle.png";
 import ArrowDown from "../../assets/img/arrow-down.png";
@@ -20,83 +8,12 @@ import CopyIcon from "../../assets/img/copy.png";
 import Facebook from "../../assets/img/Facebook.png";
 import WhatsApp from "../../assets/img/WhatsApp.png";
 import Telegram from "../../assets/img/Telegram.png";
-// import Scroller from "../../src/assets/img/scroller.png";
 
 const create = () => {
   return (
     <main className="flex flex-col">
-      {/* TABS */}
-      <div className="flex flex-row bg-[#dfe1e5] h-12 gap-4 ">
-        <div className="flex flex-row mt-4 ml-3 ">
-          <div className="w-7 ">
-            <img src={Favicon} alt="" className="w-5" />
-          </div>
-          <div className="">
-            <p className="chrome-text text-base text-[#5f6367] lg:text-base">
-              Google Chrome
-            </p>
-          </div>
-          <div className="ml-10 lg:ml-20 mt-1 w-2.5 h-2.5">
-            <img src={closeTab} alt="" />
-          </div>
-        </div>
-        <div className="flex flex-row bg-white w-72 mt-2 rounded-tl-lg rounded-tr-lg">
-          <img src={LeftStroke} alt="" className=" mt-8 -ml-2 w-2.5 h-2.5" />
-          <div className="w-7 mt-2.5 ml-3">
-            <img src={Logo} alt="" className="w-5" />
-          </div>
-          <div className="mt-2">
-            <p>HelpmeOut</p>
-          </div>
-          <div className="help-close-tab mt-3.5 w-2.5 h-2.5">
-            <img src={closeTab} alt="" />
-          </div>
-        </div>
-        <img src={RightStroke} alt="" className=" mt-10 -ml-4 w-2.5 h-2.5" />
-      </div>
-      {/* NAVIGATION BAR */}
-      <div className="flex flex-row h-14 bg[#fff]">
-        <div className="hidden lg:flex lg:flex-row lg:gap-1 lg:mt-2.5 lg:ml-2">
-          <div>
-            <img src={Back} alt="" />
-          </div>
-          <div>
-            <img src={Forward} alt="" />
-          </div>
-          <div>
-            <img src={Refresh} alt="" />
-          </div>
-        </div>
-        <div className=" mt-2 ml-8">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="https://www.helpmeout.com/home/"
-            className="search-bar bg-[#f0f3f4] h-10 rounded-3xl "
-          />
-        </div>
-        <div className="hidden extension-click lg:flex lg:flex-row lg:w-14 lg:h-6 lg:rounded-3xl lg:border-[#b2b2b2] lg:mt-4 lg:ml-2">
-          <img src={Logo} alt="" className=" lg:w-6 lg:h-6" />
-          <div className="ml-2">
-            <img src={ExtIcon} alt="" className=" lg:w-6 lg:h-6" />
-          </div>
-        </div>
-        <div className="hidden lg:flex lg:ml-1 lg:mt-3">
-          <img src={SideBar} alt="" className="w-8 h-8" />
-        </div>
-        <img
-          src={Profile}
-          alt=""
-          className="hidden lg:flex lg:mt-3 lg:ml-1 lg:w-7 lg:h-7"
-        />
-        <img src={More} alt="" className="mt-3 ml-1 w-8 h-8" />
-      </div>
-      <div>
-        <hr className="bg-[#ffffff] mt-6" />
-      </div>
       {/* NAV */}
-      <div className="ml-10 mt-4 flex flex-row lg:mt-8 lg:ml-24 justify-between">
+      <div className="ml-10 mt-4 flex flex-row md:mt-8 md:ml-24 justify-between">
         <div className="flex flex-row">
           <img src={NavLogo} alt="" className="w-10 h-10" />
           <p className="mt-2 ml-2 text-base text-[#100a42] font-bold">
@@ -188,43 +105,43 @@ const create = () => {
           <option>English</option>
         </select>
 
-        
-          <div className="flex flex-col mt-10 mb-5 gap-8">
-            <div className="flex flex-row gap-4 lg:gap-8">
-              <p className="text-[#141414] text-xl font-medium">0.01</p>
-              <p className="font-normal text-lg lg:text-xl text-[#000000]">
-                First step. Open Facebook on your desktop or mobile device and
-                locate "Marketplace" in the left-hand <br/> menu or at the top of the
-                First step. Open Facebook on your desktop or mobile device and
-                locate <br/> "Marketplace" in the left-hand menu or at the top of the
-              </p>
-            </div>
-            <div className="flex flex-row gap-4 lg:gap-8">
-              <p className="text-[#141414] text-xl font-medium">0.15</p>
-              <p className="font-normal text-lg lg:text-xl text-[#000000]">
-                First step. Open Facebook on your desktop or mobile device and
-                locate "Marketplace" in the left-hand <br /> menu or at the top
-                of the . Open Facebook on your desktop or mobile device and
-                locate "Marketplace" <br /> in the left-ha
-              </p>
-            </div>
-            <div className="flex flex-row gap-4 lg:gap-8">
-              <p className="text-[#141414] text-xl font-medium">0.30</p>
-              <p className="font-normal text-lg lg:text-xl text-[#000000]">
-                First step. Open Facebook on your desktop or mobile device and
-                locate "Marketplace" in the left-hand <br /> menu or at the top
-                of the
-              </p>
-            </div>
-            <div className="flex flex-row gap-4 lg:gap-8">
-              <p className="text-[#cfcfcf] text-xl font-medium">1.00</p>
-              <p className="font-normal text-lg lg:text-xl text-[#cfcfcf]">
-                First step. Open Facebook on your desktop or mobile device and
-                locate "Marketplace" in the left-hand <br /> menu or at the top
-                of the
-              </p>
-            </div>
+        <div className="flex flex-col w-4/5 mt-10 mb-5 gap-8 overflow-y-scroll transcript-bar">
+          <div className="flex flex-row gap-4 lg:gap-8">
+            <p className="text-[#141414] text-xl font-medium">0.01</p>
+            <p className="font-normal text-lg lg:text-xl text-[#000000]">
+              First step. Open Facebook on your desktop or mobile device and
+              locate "Marketplace" in the left-hand <br /> menu or at the top of
+              the First step. Open Facebook on your desktop or mobile device and
+              locate <br /> "Marketplace" in the left-hand menu or at the top of
+              the
+            </p>
           </div>
+          <div className="flex flex-row gap-4 lg:gap-8">
+            <p className="text-[#141414] text-xl font-medium">0.15</p>
+            <p className="font-normal text-lg lg:text-xl text-[#000000]">
+              First step. Open Facebook on your desktop or mobile device and
+              locate "Marketplace" in the left-hand <br /> menu or at the top of
+              the . Open Facebook on your desktop or mobile device and locate
+              "Marketplace" <br /> in the left-ha
+            </p>
+          </div>
+          <div className="flex flex-row gap-4 lg:gap-8">
+            <p className="text-[#141414] text-xl font-medium">0.30</p>
+            <p className="font-normal text-lg lg:text-xl text-[#000000]">
+              First step. Open Facebook on your desktop or mobile device and
+              locate "Marketplace" in the left-hand <br /> menu or at the top of
+              the
+            </p>
+          </div>
+          <div className="flex flex-row gap-4 lg:gap-8">
+            <p className="text-[#cfcfcf] text-xl font-medium">1.00</p>
+            <p className="font-normal text-lg lg:text-xl text-[#cfcfcf]">
+              First step. Open Facebook on your desktop or mobile device and
+              locate "Marketplace" in the left-hand <br /> menu or at the top of
+              the
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );

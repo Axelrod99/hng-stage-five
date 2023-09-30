@@ -1,22 +1,5 @@
 import React from "react";
 import Popup from "../../components/PopUp";
-import RedIcon from "../../assets/img/Red.png";
-import YellowIcon from "../../assets/img/Yellow.png";
-import GreenIcon from "../../assets/img/Green.png";
-import closeTab from "../../assets/img/Vector.png";
-import LeftStroke from "../../assets/img/Left round feet.png";
-import Logo from "../../assets/img/iCON 7 1.png";
-import RightStroke from "../../assets/img/Right round feet.png";
-import FigmaIcon from "../../assets/img/Figma Favicon.png";
-import NewTabIcon from "../../assets/img/New Tab.png";
-import ArrowDown from "../../assets/img/arrow-down.png";
-import Back from "../../assets/img/Back button.png";
-import Forward from "../../assets/img/Forward button.png";
-import Refresh from "../../assets/img/Refresh button.png";
-import ExtIcon from "../../assets/img/Extensions button.png";
-import SideBar from "../../assets/img/Sidebar button.png";
-import User from "../../assets/img/User.png";
-import More from "../../assets/img/More.png";
 import logo1 from "../../assets/icons/iCON 7 1.svg";
 import Edit from "../../assets/img/edit.png";
 import CopyIcon from "../../assets/img/copy.png";
@@ -31,95 +14,7 @@ const ready = () => {
   return (
     
     <main className="flex flex-col">
-      {/* TABS */}
-      <div className="flex flex-row bg-[#dfe1e5] h-10 gap-4 ">
-        <div className="hidden lg:flex lg:flex-row lg:mt-4 lg:ml-3 gap-1">
-          <img src={RedIcon} alt="" className=" lg:w-3 lg:h-3 " />
-          <img src={YellowIcon} alt="" className=" lg:w-3 lg:h-3 " />
-          <img src={GreenIcon} alt="" className=" lg:w-3 lg:h-3 " />
-        </div>
-        <div className="flex flex-row bg-white pr-2 lg:w-60 mt-2 rounded-tl-lg rounded-tr-lg">
-          <img src={LeftStroke} alt="" className=" w-2.5 h-2.5 mt-6 -ml-2" />
-          <div className="w-7 mt-2 ml-3">
-            <img src={Logo} alt="" className="w-5" />
-          </div>
-          <div className="mt-1.5 ml-1 lg:mt-1.5">
-            <p>HelpmeOut</p>
-          </div>
-          <div className="current-tab mt-3 w-2.5 h-2.5">
-            <img src={closeTab} alt="" />
-          </div>
-        </div>
-        <img src={RightStroke} alt="" className=" w-2.5 h-2.5 mt-8 -ml-4" />
-        <div className="flex flex-row -ml-6 lg:-ml-3 gap-2">
-          <img src={FigmaIcon} alt="" className="w-4 h-4 mt-3.5" />
-          <p className="text-xs font-normal text-[#616163] mt-3.5">
-            Team_Zuri_Explore
-          </p>
-          <img
-            src={closeTab}
-            alt=""
-            className="lg:w-3 lg:h-3 w-2.5 h-2.5 mt-4 lg:mt-3.5 ml-4 lg:ml-14"
-          />
-        </div>
-        <div className="flex flex-row -ml-2 lg:ml-1 gap-2">
-          <img src={FigmaIcon} alt="" className="w-4 h-4 mt-3" />
-          <p className="text-xs font-normal text-[#616163] mt-3">HelpMeOut</p>
-          <img
-            src={closeTab}
-            alt=""
-            className="lg:w-3 lg:h-3 w-2.5 h-2.5 mt-4 lg:mt-3.5 ml-4 lg:ml-16"
-          />
-        </div>
-        <img
-          src={NewTabIcon}
-          alt=""
-          className=" lg:w-5 lg:h-5 lg:mt-2.5 lg:ml-4 new-tab"
-        />
-        <img
-          src={ArrowDown}
-          alt=""
-          className=" lg:w-6 lg:h-6 lg:mt-2 drop-tab"
-        />
-      </div>
-      {/* NAVIGATION BAR */}
-      <div className="flex flex-row h-14 bg[#fff]">
-        <div className="hidden lg:flex lg:flex-row lg:gap-1 lg:mt-2.5 lg:ml-2">
-          <div>
-            <img src={Back} alt="" />
-          </div>
-          <div>
-            <img src={Forward} alt="" />
-          </div>
-          <div>
-            <img src={Refresh} alt="" />
-          </div>
-        </div>
-        <div className=" mt-2 ml-8">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="https://www.helpmeout.com/file/xnbp3IXlY5nv0gKNdne1QG/Untitled?type=design&node-id=0-2039&mode=design&t=3upXLNWEGdbMBMt1-0"
-            className="browser-bar bg-[#f0f3f4] h-10 rounded-3xl "
-          />
-        </div>
-        <div className="hidden extension-click lg:flex lg:flex-row lg:w-14 lg:h-6 lg:rounded-3xl lg:border-[#b2b2b2] lg:mt-4 lg:ml-2">
-          <img src={Logo} alt="" className=" lg:w-6 lg:h-6" />
-          <div className="ml-2">
-            <img src={ExtIcon} alt="" className=" lg:w-6 lg:h-6" />
-          </div>
-        </div>
-        <div className="hidden lg:flex lg:ml-1 lg:mt-3">
-          <img src={SideBar} alt="" className="w-8 h-8" />
-        </div>
-        <img
-          src={User}
-          alt=""
-          className="hidden lg:flex lg:mt-3 lg:ml-1 lg:w-7 lg:h-7"
-        />
-        <img src={More} alt="" className="mt-3 ml-1 w-8 h-8" />
-      </div>
+      
       {/* HEADER */}
       <div className="flex justify-between px-[40px] lg:px-[70px] font-semibold items-center">
         <div className="flex items-center font-bold gap-[8px] py-5">
