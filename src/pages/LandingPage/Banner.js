@@ -4,6 +4,7 @@ import image3 from "../../assets/images/woman-using-smartphone-technology 2.png"
 import grid1 from "../../assets/images/AdobeStock_362497671 1.png";
 import grid2 from "../../assets/images/AdobeStock_400053098 1.png";
 import vector1 from "../../assets/images/grid.136a9256d16888900db0.svg (1).png";
+import rightArrow from '../../assets/icons/arrow-right.svg'
 
 const Banner = () => {
   return (
@@ -20,8 +21,9 @@ const Banner = () => {
                 on how to get things done on a website.
               </p>
             </div>
-            <button className="bg-[#120B48] text-white w-[180px] lg:w-[210px] xl:w-[236px] h-[50px] lg:h-[65px] rounded-[8px]">
+            <button className="bg-[#120B48] flex gap-2 items-center justify-center text-white w-[180px] lg:w-[210px] xl:w-[236px] h-[50px] lg:h-[65px] rounded-[8px]">
               Install HelpMeOut
+<img src={rightArrow}/>
             </button>
           </div>
         </div>
